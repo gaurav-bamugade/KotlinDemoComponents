@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/search_long_lat"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/search_long"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:background="@drawable/grey_border"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+
+                />
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/search_latitude"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:inputType="numberDecimal"
+                android:background="@drawable/grey_border"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/search_long_lat"
+            android:id="@+id/searched_text_tx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/search_long_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="abcd"
+                android:textColor="@color/black"
+                android:background="@drawable/grey_border"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+
+                />
+
+            <TextView
+
+                android:layout_weight="1"
+                android:id="@+id/search_latitude_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="abcd"
+                android:background="@drawable/grey_border"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                />
+
+        </LinearLayout>
+        <fragment
+            android:id="@+id/map"
+            android:layout_below="@+id/searched_text_tx"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity" />
+    </RelativeLayout>
+</layout>
+

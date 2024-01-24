@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".gps_loc_2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="bg"
+                android:id="@+id/main_long_tx"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="j"
+                android:textColor="@color/black"
+                android:id="@+id/main_latitude_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/gps_loc_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gps"
+                >
+
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
